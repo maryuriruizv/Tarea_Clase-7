@@ -37,7 +37,42 @@ int main(){
     //llamamos a la funcion leerNumeros
     leerNumeros(num1, num2);
 
+    //llamamos a la funcion compararValores
+    compararValores(num1, num2);
 
+    //llamamos a la funcion mostrarResultado
+    mostrarResultado(num1, num2, mayor);
+
+return 0;
 }
 
 //Funcion para leer los numeros
+void leerNumeros(int &num1, int &num2){
+    cout << "Ingrese el primer numero: ";
+    cin >> num1;
+    cout << "Ingrese el segundo numero: ";
+    cin >> num2;
+}
+
+//Funciones para comparar los valores
+void compararValores(int num1, int num2){;
+    cout << "Comparando los valores..." << endl;
+    if (num1 > num2){
+        cout << "El primer numero es mayor que el segundo." << endl;
+    }else if (num2 > num1){
+        cout << "El segundo numero es mayor que el primero." << endl;
+    }else{
+        cout << "Ambos numeros son iguales." << endl;
+    }
+}
+
+//Funcion para mostrar el resultado
+void mostrarResultado(int num1, int num2, int mayor){
+    if (num1 > num2){
+        cout << "El primer numero es mayor que el segundo." << endl;
+    }else if (num2 > num1){
+        cout << "El segundo numero es mayor que el primero." << endl;
+    }else if (num1 == num2){
+        cout << "Ambos numeros son iguales." << endl;
+    }
+}
