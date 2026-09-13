@@ -36,7 +36,19 @@ int main(){
     //llamamos a la funcion LeerNumeros 
     leerNumeros(numeros);
 
+    //llamamos a la funcion calcularSuma
+    suma = calcularSuma(numeros);
+
+    //llamamos a la funcion calcularPromedio
+    promedio = calcularPromedio(suma);
+
+    //Mostramos los resultados
+    cout << "La suma de los 3 numeros es: " << suma << endl;
+    cout << "El promedio de los 3 numeros es: " << promedio << endl;
+
+    return 0;
 }
+
 
 
 //Esta funcion lee los 3 numeros y los guarda en las variables originales
@@ -45,4 +57,23 @@ void leerNumeros(int numeros[]){
         cout << "Ingrese el numero " << i + 1 << ": ";
         cin >> numeros[i];
     }
+}
+
+//Esta funcion calcula la suma de los 3 numeros y devuelve el resultado
+int calcularSuma(int numeros[]){
+    int suma = 0;
+    for (int i = 0; i < 3; i++){
+        suma += numeros[i];
+    }
+}
+
+//Esta funcion calcula el promedio de los 3 numeros 
+double calcularPromedio(int suma){
+    return suma / 3.0;
+}
+
+//Esta funcion muestra los resultados de la suma y el promedio de los 3 numeros
+void mostrarResultados(int suma, double promedio){
+    cout << "La suma de los 3 numeros es: " << suma << endl;
+    cout << "El promedio de los 3 numeros es: " << promedio << endl; 
 }
