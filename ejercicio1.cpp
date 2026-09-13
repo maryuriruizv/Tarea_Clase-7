@@ -26,6 +26,13 @@ E/P/S
 #include <iostream>
 using namespace std;
 
+
+//Prototips de funciones
+void leerNumeros(int numeros[]);
+int calcularSuma(int numeros[]);
+double calcularPromedio(int suma);
+
+
 int main(){
     //Declaramos las variables 
     int numeros[3];
@@ -65,6 +72,7 @@ int calcularSuma(int numeros[]){
     for (int i = 0; i < 3; i++){
         suma += numeros[i];
     }
+    return suma;
 }
 
 //Esta funcion calcula el promedio de los 3 numeros 
