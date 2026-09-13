@@ -40,3 +40,4 @@ int main(){
 
 }
 
+//Funcion para leer los numeros
