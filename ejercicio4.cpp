@@ -49,3 +49,19 @@ int main(){
     cout << "Numero 2: " << num2 << endl;
     
 }
+
+//Funcion para leer los numeros
+void leerNumeros(int &num1, int &num2){
+    cout << "Ingrese el primer numero: ";
+    cin >> num1;
+    cout << "Ingrese el segundo numero: ";
+    cin >> num2;
+}
+
+//Funcion para intercambiar los valores
+void intercambiarValores(int &num1, int &num2){
+    int copia = num1;
+    num1 = num2;
+    num2 = copia;
+}
+
