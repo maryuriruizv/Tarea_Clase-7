@@ -1,4 +1,4 @@
-/*Ejercicio 4
+/*Ejercicio 5
 Autor: Maryuri Ruiz 
 Fecha: 13 de septiembre
 
@@ -26,4 +26,18 @@ using namespace std;
 void incrementarContador(int n, int &contador);
 
 
+int main(){
+    //Declaramos las variables
+    int n, contador = 0;
+
+    //Pedimos al usuario que ingrese un numero entero positivo n
+    cout << "Ingrese un numero entero positivo: ";
+    cin >> n;
+
+    //llamamos a la funcion incrementarContador
+    incrementarContador(n, contador);
+
+    
 }
+
+//Funcion para incrementar el contador
