@@ -1,4 +1,4 @@
-/*Ejercicio 2
+/*Ejercicio 3
 Autor: Maryuri Ruiz 
 Fecha: 13 de septiembre
 
