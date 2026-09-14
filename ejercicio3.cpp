@@ -42,7 +42,23 @@ int main(){
     //llamamos a la funcion mostrarResultado
     mostrarResultado(area);
 
-    
+    return 0;
 }
 
 //Funcion para leer los datos
+void leerDatos(float &base, float &altura){
+    cout << "Ingrese la base del rectangulo: ";
+    cin >> base;
+    cout << "Ingrese la altura del rectangulo: ";
+    cin >> altura;
+}
+
+//Funcion para calcular el area
+float calcularArea(float base, float altura){
+    return base * altura;
+}
+
+//Funcion para mostrar el resultado
+void mostrarResultado(float area){
+    cout << "El area del rectangulo es: " << area << endl;
+}
