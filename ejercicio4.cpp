@@ -47,7 +47,8 @@ int main(){
     cout << "Valores despues del intercambio: " << endl;
     cout << "Numero 1: " << num1 << endl;
     cout << "Numero 2: " << num2 << endl;
-    
+
+    return 0;
 }
 
 //Funcion para leer los numeros
