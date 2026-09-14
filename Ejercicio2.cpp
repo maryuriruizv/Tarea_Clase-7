@@ -57,13 +57,6 @@ void leerNumeros(int &num1, int &num2){
 //Funciones para comparar los valores
 void compararValores(int num1, int num2){;
     cout << "Comparando los valores..." << endl;
-    if (num1 > num2){
-        cout << "El primer numero es mayor que el segundo." << endl;
-    }else if (num2 > num1){
-        cout << "El segundo numero es mayor que el primero." << endl;
-    }else{
-        cout << "Ambos numeros son iguales." << endl;
-    }
 }
 
 //Funcion para mostrar el resultado
