@@ -37,7 +37,17 @@ int main(){
     //llamamos a la funcion incrementarContador
     incrementarContador(n, contador);
 
-    
+    return 0;
 }
 
 //Funcion para incrementar el contador
+void incrementarContador(int n, int &contador){
+    //Recorremos desde 0 hasta n
+    for (int i = 0; i <= n; i++){
+        //Actualizamos el valor del contador
+        contador = i;
+        //Mostramos el valor del contador en cada incremento
+        cout << "Contador: " << contador << endl;
+    }
+}
+
