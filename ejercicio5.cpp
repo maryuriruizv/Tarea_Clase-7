@@ -40,6 +40,7 @@ int main(){
     return 0;
 }
 
+
 //Funcion para incrementar el contador
 void incrementarContador(int n, int &contador){
     //Recorremos desde 0 hasta n
